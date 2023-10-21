@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Chat from "./Chat";
@@ -36,6 +36,7 @@ export default function App() {
           name="Products"
           component={Products}
           options={{
+            
             headerTitle: () => (
               <View
                 style={{
@@ -53,6 +54,7 @@ export default function App() {
                 <TextInput
                   placeholder="Tìm kiếm"
                   style={{ backgroundColor: "#fff",padding: 10, paddingLeft:30 }}
+
                 ></TextInput>
                 
                 </View>

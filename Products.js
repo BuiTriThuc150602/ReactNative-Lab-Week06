@@ -5,10 +5,13 @@ import {
   StyleSheet,
   FlatList,
   Image,
+  TextInput,
 } from "react-native";
-import React from "react";
+import React, { useEffect, useState } from "react";
 const Products = ({ navigation }) => {
-  const products = require("./data/products.json");
+  const [products, setProducts] = useState([]);
+  const [searchText, setSearchText] = useState("");
+
   const renderItems = ({ item }) => {
     const stars = [];
     for (let i = 0; i < item.rate; i++) {
@@ -45,6 +48,73 @@ const Products = ({ navigation }) => {
       </View>
     );
   };
+
+  useEffect(() => {
+    navigation.setOptions({
+      headerTitle: () => (
+        <View
+          style={{
+            flexDirection: "row",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <View>
+            <Image
+              style={{
+                width: 20,
+                height: 20,
+                marginLeft: 5,
+                marginBottom: -50,
+              }}
+              source={require("./img/search.png")}
+              resizeMode="contain"
+            />
+            <TextInput
+              placeholder="Tìm kiếm"
+              style={{
+                backgroundColor: "#fff",
+                padding: 10,
+                paddingLeft: 30,
+                marginTop: 20,
+              }}
+              onChangeText={(text) => setSearchText(text)}
+            ></TextInput>
+          </View>
+
+          <Image
+            style={{ width: 26, height: 26, marginLeft: 30 }}
+            source={require("./img/bi_cart-check.png")}
+            resizeMode="contain"
+          />
+          <Text
+            style={{
+              backgroundColor: "#f31111",
+              width: 15,
+              height: 15,
+              borderRadius: 50,
+              color: "#f31111",
+              textAlign: "center",
+              marginLeft: -15,
+              marginTop: -10,
+            }}
+          >
+            &nbsp;&nbsp;&nbsp;&nbsp;
+          </Text>
+        </View>
+      ),
+    });
+    if (searchText) {
+      const filteredProducts = require("./data/productsData.json").filter((item) =>
+        item.name.toLowerCase().includes(searchText.toLowerCase())
+      );
+      setProducts(filteredProducts);
+    } else {
+      setProducts(require("./data/productsData.json"));
+    }
+    
+  }, [navigation, searchText]);
+
   return (
     <View>
       <SafeAreaView style={styles.container}>
@@ -92,7 +162,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
-    padding : 5
+    padding: 5,
   },
 });
 
