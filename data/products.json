@@ -1,0 +1,50 @@
+[
+    {
+        "image" : "giacchuyen",
+        "name" : "Cáp chuyển đổi từ USB sang PS2",
+        "price" : "60.000đ",
+        "rate" : "5",
+        "totalRate" : "15",
+        "discount": "39%"
+    },
+    {
+        "image" : "daynguon",
+        "name" : "Cáp chuyển đổi từ USB sang PS2",
+        "price" : "60.000đ",
+        "rate" : "4",
+        "totalRate" : "15",
+        "discount": "39%"
+    },
+    {
+        "image" : "dauchuyendoipsps2",
+        "name" : "Cáp chuyển đổi từ USB sang PS2",
+        "price" : "60.000đ",
+        "rate" : "3",
+        "totalRate" : "15",
+        "discount": "39%"
+    },
+    {
+        "image" : "dauchuyendoi",
+        "name" : "Cáp chuyển đổi từ USB sang PS2",
+        "price" : "60.000đ",
+        "rate" : "4",
+        "totalRate" : "15",
+        "discount": "39%"
+    },
+    {
+        "image" : "carbusbtops2",
+        "name" : "Cáp chuyển đổi từ USB sang PS2",
+        "price" : "60.000đ",
+        "rate" : "5",
+        "totalRate" : "15",
+        "discount": "39%"
+    },
+    {
+        "image" : "daucam",
+        "name" : "Cáp chuyển đổi từ USB sang PS2",
+        "price" : "60.000đ",
+        "rate" : "4",
+        "totalRate" : "15",
+        "discount": "39%"
+    }
+]

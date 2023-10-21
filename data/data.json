@@ -1,0 +1,37 @@
+[
+    {
+        "image" : "ca_nau_lau",
+        "name" : "Ca nấu lẩu",
+        "shop" : "Devang"
+    },
+    {
+        "image" : "ga_bo_toi",
+        "name" : "1 KG Khô Gà Bơ Tỏi",
+        "shop" : "LTD Foot"
+    },
+    {
+        "image" : "xa_can_cau",
+        "name" : "Xe Cần Cẩu Đa Năng",
+        "shop" : "Thé giới đồ chơi"
+    },
+    {
+        "image" : "do_choi_dang_mo_hinh",
+        "name" : "Đồ chơi dạng mô hình",
+        "shop" : "Thế giới đồ chơi"
+    },
+    {
+        "image" : "lanh_dao_gian_don",
+        "name" : "Lãnh Đạo Giản Đơn",
+        "shop" : "Minh Long Book"
+    },
+    {
+        "image" : "hieu_long_con_tre",
+        "name" : "Hiểu Lòng Trẻ Con",
+        "shop" : "Minh Long Book"
+    },
+    {
+        "image" : "trump",
+        "name" : "Donald Trump - Từ Tỷ Phú Đến Tổng Thống",
+        "shop" : "Minh Long Book"
+    }
+]
