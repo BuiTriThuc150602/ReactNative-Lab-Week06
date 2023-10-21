@@ -113,7 +113,7 @@ const Products = ({ navigation }) => {
       setProducts(require("./data/productsData.json"));
     }
     
-  }, [navigation, searchText]);
+  }, [searchText]);
 
   return (
     <View>
